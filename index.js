@@ -72,22 +72,22 @@ function showProgress() {
   let percent = document.querySelector("#percent-value");
   percent.style.width = `${calPercent()}%`;
 }
-// function to show the number of tasks left to be done
+// function to show the total number of tasks
 function showCount() {
-  document.querySelector("#show-task-left").innerHTML = leftCount();
+  document.querySelector("#show-all-tasks").innerHTML = tasks.length;
 }
-// function to calculate the number of tasks left to de done
-function leftCount() {
+// function to calculate the number of tasks  done
+function doneCount() {
   let done = 0;
   tasks.forEach((task) => {
     if (task.done) {
       done += 1;
     }
   });
-  return tasks.length - done;
+  return done;
 }
 // function to calculate the percentage of progress
 function calPercent() {
   let total = tasks.length;
-  return ((total - leftCount()) / total) * 100;
+  return (doneCount() / total) * 100;
 }
