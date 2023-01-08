@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dcc91fa579.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="center">
+        <h1 class="title">TO DO LIST</h1>
+        <div class="content">
+            <div id="create-task">
+              <input id="task-input" type="text" placeholder="Type your task..." />
+              <button id="add-button">Add Task</button>
+            </div>
+            <hr />
+            <div id="tasks">
+              <ul id="tasks-list">
+                <!-- <li class="task">
+                  <div class="check-task">
+                    <input class="list-checkbox" type="checkbox" name="task-check" />
+                    <label class="list-label" for="task-check"> Test 1</label>
+                  </div>
+                  <i class="fa-solid fa-trash-can delete-button"></i>
+                </li> -->
+              </ul>
+            </div>
+            <hr />
+            <div id="tasks-left">
+              <h2>Total Tasks Left:</h2>
+              <h2 id="show-task-left">0</h3>
+            </div>
+            <hr />
+            <div id="percent-task">
+               <h2>Current Progress:</h2>
+              <div id="show-percent"> <div id="percent-value"></div></div>
+            </div>
+          </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

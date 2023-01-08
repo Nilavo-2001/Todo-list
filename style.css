@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 70px;
+}
+.center {
+  text-align: center;
+}
+.title {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+}
+
+.content {
+  border: solid 2px black;
+  border-radius: 10px;
+}
+#task-input {
+  width: 65%;
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin-top: 1.5%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+#add-button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+}
+
+#add-button:hover {
+  background-color: #444;
+}
+
+#add-button:active {
+  background-color: #555;
+}
+#create-task {
+  min-height: 11vh;
+}
+#tasks {
+  min-height: 15vh;
+}
+#tasks-left {
+  min-height: 6vh;
+}
+#percent-task {
+  min-height: 12vh;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 0.5rem;
+}
+.list-checkbox {
+  font-size: 1rem;
+}
+.list-label {
+  font-size: 1.5rem;
+}
+li:hover {
+  background-color: lightgrey;
+}
+.list-label {
+  margin-left: 10px;
+}
+.delete-button {
+  font-size: 1.2rem;
+}
+.delete-button:hover {
+  cursor: pointer;
+}
+.list-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1.25em;
+  height: 1.25em;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.list-checkbox:checked {
+  background-color: black;
+  border-color: #666;
+}
+
+#show-percent {
+  width: 60%;
+  height: 30px;
+  margin: 5px auto;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+#percent-value {
+  width: 0;
+  height: inherit;
+  text-align: center;
+  border-radius: 20px;
+  background-color: black;
+}
+.checked {
+  text-decoration: line-through;
+}
